@@ -95,7 +95,7 @@ class Snake:
 
     def update(self):
         self.tmp_legacy += 1
-        if self.tmp_legacy == self.legacy:
+        if self.tmp_legacy >= self.legacy:
             for i in range(len(self.position) - 1, 0, -1):
                 self.position[i][0] = self.position[i-1][0]
                 self.position[i][1] = self.position[i-1][1]
